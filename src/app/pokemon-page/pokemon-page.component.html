@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <app-pokemon-item class="col-xs-12 col-sm-6 col-md-4 col-lg-3"
+                          *ngFor="let pok of pokemonArray"
+                          style="margin-top: 7px; margin-bottom: 7px;"
+                          
+                          [dexNumber]="pok.dexNumber"
+                          [name]="pok.name"
+                          [name_english]="pok.name_english"
+                          [name_deutsch]="pok.name_deutsch"
+                          [name_japan]="pok.name_japan"
+                          [nb_type]="pok.nb_type"
+                          [type1]="pok.type1"
+                          [type2]="pok.type2"
+                          [height]="pok.height"
+                          [weight]="pok.weight"
+                          [hp]="pok.hp"
+                          [force]="pok.force"
+                          [defense]="pok.defense"
+                          [special]="pok.special"
+                          [speed]="pok.speed"
+                          [weaknesses_resistances]="pok.weaknesses_resistances">
+        </app-pokemon-item>
+    </div>
+</div>

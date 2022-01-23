@@ -1,0 +1,109 @@
+<div class="card" style="width: 10rem;">
+    <img src="{{sprite}}" class="card-img-top" alt="{{name}}">
+    <div class="card-body">
+        <h5 class="card-title">#{{dexNumber}}</h5>
+        <p class="card-text">{{name}}</p>
+        <button type="button" class="btn btn-primary stretched-link" data-bs-toggle="modal" [attr.data-bs-target]="'#' + name">Description détaillée</button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="{{name}}" tabindex="-1" role="dialog" [attr.aria-labelledby]="'Modal de ' + name" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title col-sm-2" id="{{dexNumber}}">#{{dexNumber}}</h1>
+            <h1 class="modal-title col-sm-10" id="{{name}}" style="display: flex; justify-content: flex-end;">{{name}}</h1>
+        </div>
+        <div class="modal-body" style="text-align: center">
+          <img src="{{sprite}}" class="card-img-top img-modal" alt="{{name}}">
+          <br>
+          <p  *ngIf="nb_type===1">Type: </p>
+          <p  *ngIf="nb_type===2">Types: </p>
+
+          <img src="assets/sprite_type/{{type1}}.png" class="type-img" alt="{{type1}}">
+          
+          <p *ngIf="nb_type===2">
+            <img src="assets/sprite_type/{{type2}}.png" class="type-img" alt="{{type2}}">
+          </p>
+
+          <div class="row">
+            <div class="col-sm-6 d-flex align-items-center justify-content-center">
+              <table style="table-layout: fixed;">
+                <tr>
+                    <td style="text-align: right;">
+                      <img src="assets/images/poids.png" alt="poids" height="50px;" width="50px;">
+                    </td>
+                    <td style="text-align: left;">
+                      <span> : {{weight}} kg</span>
+                    </td>
+                  </tr>
+                <tr>
+                  <td style="text-align: right;">
+                    <img src="assets/images/taille.png" alt="taille" height="50px;" width="50px;">
+                  </td>
+                  <td style="text-align: left;">
+                    <span> : {{height}} m</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="col-sm-6 d-flex align-items-center justify-content-center">
+              <table style="table-layout: fixed; width: 100%;">
+              <tr>
+                  <td style="text-align: right;">
+                    <img src="assets/images/japan.png" alt="drapeau_japon" height="50px;" width="50px;">
+                  </td>
+                <td style="text-align: left;">
+                  <span> : {{name_japan}}</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: right;">
+                  <img src="assets/images/america.png" alt="drapeau_anglais" height="50px;" width="50px;">
+                </td>
+                <td style="text-align: left;">
+                  <span> : {{name_english}}</span>
+                </td>
+              </tr> 
+              <tr>   
+                <td style="text-align: right;">
+                  <img src="assets/images/germany.png" alt="drapeau_allemand" height="50px;" width="50px;">
+                </td>
+                <td style="text-align: left;">
+                  <span> : {{name_deutsch}}</span>
+                </td>
+              </tr> 
+            </table>
+            </div>
+          </div>
+
+
+
+
+
+          Statistiques de base:
+          <br>
+          PV: {{hp}}
+          <br>
+          Attaque: {{force}}
+          <br>
+          Défense: {{defense}}
+          <br>
+          Spécial: {{special}}
+          <br>
+          Vitesse: {{speed}}
+          <br>
+          <br>
+          Description:
+          <br>
+          MANQUANTE
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary">Accéder à un set stratégique</button>
+        </div>
+      </div>
+    </div>
+</div>
