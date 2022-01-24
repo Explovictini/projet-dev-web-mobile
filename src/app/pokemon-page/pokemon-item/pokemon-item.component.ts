@@ -23,6 +23,7 @@ export class PokemonItemComponent implements OnInit {
   @Input() special!: number;
   @Input() speed!: number;
   @Input() weaknesses_resistances!: string[];
+  @Input() description!: string;
 
   sprite!: string;
 
