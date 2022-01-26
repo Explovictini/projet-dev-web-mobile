@@ -18,9 +18,13 @@ export class PokemonPageComponent implements OnInit {
 
   ngOnInit(): void {
     //this.getDataService.storeData();
+
+    // Récupère le tableau de Pokémon reçu par requête HTTP dans le service get-data.service.ts
+    this.getDataService.importData().subscribe({
+      next: pokemonArray =>{
+        this.pokemonArray = pokemonArray
+      }
+    })
   }
 
-  setArray(array: Pokemon[]): void {
-    this.pokemonArray = array;
-  }
 }

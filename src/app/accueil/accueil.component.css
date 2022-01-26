@@ -1,0 +1,126 @@
+.carousel {
+    width:300px;
+    height:300px;
+    border: 8px black double;
+    margin-top: 10px;
+}
+
+.carousel-item{
+    padding: 5px;
+}
+
+#carousel {
+    position: relative;
+}
+
+.pokeball{
+    position: absolute;
+}
+
+.pokeball-top-left {
+    top:-16px;
+    left:-16px;
+}
+
+.pokeball-top-right {
+    top: -16px;
+    right:-16px;
+}
+
+.pokeball-bottom-left {
+    bottom:-16px;
+    left:-16px;
+}
+
+.pokeball-bottom-right {
+    bottom:-16px;
+    right:-16px;
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .carousel {
+        width:250px;
+        height:250px;
+        border: 6px black double;
+        margin-top: 6px;
+    }
+    
+    .carousel-item{
+        padding: 3px;
+    }
+
+    .pokeball{
+        width: 19px;
+        height: 19px;
+    }
+
+    .pokeball-top-left {
+        top:-14px;
+        left:-14px;
+    }
+
+    .pokeball-top-right {
+        top: -14px;
+        right:-14px;
+    }
+
+    .pokeball-bottom-left {
+        bottom:-14px;
+        left:-14px;
+    }
+
+    .pokeball-bottom-right {
+        bottom:-14px;
+        right:-14px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+    .carousel {
+        width:275px;
+        height:275px;
+        border: 8px black double;
+        margin-top: 8px;
+    }
+    
+    .carousel-item{
+        padding: 4px;
+    }
+
+    .pokeball{
+        width: 22px;
+        height: 22px;
+    }
+
+    .pokeball-top-left {
+        top:-15px;
+        left:-15px;
+    }
+
+    .pokeball-top-right {
+        top: -15px;
+        right:-15px;
+    }
+
+    .pokeball-bottom-left {
+        bottom:-15px;
+        left:-15px;
+    }
+
+    .pokeball-bottom-right {
+        bottom:-15px;
+        right:-15px;
+    }
+
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -20,7 +20,7 @@ export class Pokemon {
 
     public description!: string;
 
-    constructor(dexNumber: string, name: string, name_english: string, name_deutsch: string, name_japan: string, nb_type: number, type1: string, type2: string, height: number, weight: number, hp: number, force: number, defense: number, special: number, speed: number, weaknesses_resistances: string[], description: string){
+    constructor(dexNumber: string, name: string, name_english: string, name_deutsch: string, name_japan: string, nb_type: number, type1: string, type2: string, height: number, weight: number, hp: number, force: number, defense: number, speed: number, special: number, weaknesses_resistances: string[], description: string){
         this.dexNumber = dexNumber;
         this.name = name;
         this.name_english = name_english;
