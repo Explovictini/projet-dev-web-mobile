@@ -12,6 +12,7 @@ import { PokemonItemComponent } from './pokemon-page/pokemon-item/pokemon-item.c
 import { StratPageComponent } from './strat-page/strat-page.component';
 import { StratPokemonComponent } from './strat-page/strat-pokemon/strat-pokemon.component';
 import { ContactComponent } from './contact/contact.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -24,12 +25,13 @@ import { ContactComponent } from './contact/contact.component';
     StratPokemonComponent,
     ContactComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,1 +1,59 @@
-<p>strat-pokemon works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="{{sprite}}" alt="{{name}}">
+      <p>{{name}}</p>
+      <img src="assets/sprite_type/{{type1}}.png" alt="{{type1}}">
+      <img *ngIf="type2 != 'Aucun'" src="assets/sprite_type/{{type2}}.png" alt="{{type2}}">
+    </div>
+
+    <div class="col">
+      <div *ngIf="strong_weaknesses.length > 0">
+        <p *ngIf="strong_weaknesses.length == 1" >faiblesse forte: </p>
+        <p *ngIf="strong_weaknesses.length > 1" >faiblesses fortes: </p>
+        <div *ngFor="let str_weak of strong_weaknesses" style="display: inline">
+          <img src="assets/sprite_type/{{str_weak}}.png" alt="{{str_weak}}">
+        </div>
+      </div>
+
+      <div *ngIf="weaknesses.length > 0">
+        <p *ngIf="weaknesses.length == 1">faiblesse: </p>
+        <p *ngIf="weaknesses.length > 1">faiblesses: </p>
+        <div *ngFor="let weak of weaknesses" style="display: inline">
+          <img src="assets/sprite_type/{{weak}}.png"  alt="{{weak}}" >
+        </div>
+      </div>
+
+      <p *ngIf="resistances.length == 1">résistance: </p>
+      <p *ngIf="resistances.length > 1">résistances: </p>
+      <div *ngFor="let res of resistances" style="display: inline">
+        <img src="assets/sprite_type/{{res}}.png" alt="{{res}}">
+      </div>
+
+      <div *ngIf="strong_resistances.length > 0">
+        <p *ngIf="strong_resistances.length == 1">résistance forte: </p>
+        <p *ngIf="strong_resistances.length > 1">résistances fortes: </p>
+        <div *ngFor="let str_res of strong_resistances" style="display: inline">
+          <img src="assets/sprite_type/{{str_res}}.png"  alt="{{str_res}}">
+        </div>
+      </div>
+
+      <div *ngIf="immunities.length > 0">
+        <p *ngIf="immunities.length == 1">immunité: </p>
+        <p *ngIf="immunities.length > 1">immunités: </p>
+        <div *ngFor="let imm of immunities" style="display: inline">
+          <img src="assets/sprite_type/{{imm}}.png" alt="{{imm}}">
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 1em; margin-bottom: 1em">
+    <p *ngFor="let atk of pokAttacks.get(name)" style="border: 1px solid" >{{atk}}</p>
+    </div>
+    <p>{{pokExplanation.get(name)}}</p>
+
+    <hr style="margin-top: 1em;">
+
+
+  </div>
+</div>

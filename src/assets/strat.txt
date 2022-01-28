@@ -1,3 +1,5 @@
+Tauros
+
 Tauros est assurément le meilleur Pokémon de sa génération en terme de stratégie (excepté Mew et Mewtwo). Avec près de 70% des équipes possédant un Tauros, celui-ci se distingue par sa puissance de frappe inégalable, avec une attaque Ultralaser stabée surpuissante et physique, contrairement à aujourd'hui où il s'agit d'une attaque spéciale.
 Le tour de rechargement après l'utilisation de cette attaque n'étant pas toujours envisageable, on la couple donc avec Plaquage pour des dégâts toujours robustes.
 De nos jours, Ultralaser est une attaque qualifiée de mauvaise, auparavant, cela n'était pas le cas car si la cible était mise K.O., le tour de rechargement était évité !
@@ -45,11 +47,11 @@ Laser Glace/Destruction/Ultralaser/Séisme
 Noadkoko
 
 4ème Pokémon le plus puissant de la 4ème génération et étant présent dans quasi 50% des équipes, ce Pokémon se paye le luxe d'avoir un double type extrêmement puissant. En effet, le type Psy est un des meilleurs (si ce n'est le meilleur) de l'époque. Le type Plante, malgré ses nombreuses faiblesses, lui permet d'être immunisé à Poudre Dodo, beaucoup plus fort que de nos jours. En effet, un Pokémon endormi ne pouvait attaquer le tour où il se réveillait.
-Noadkoko possède justement Poudre Dodo ce qui lui permettait de temporiser tout en récupérant des PV avec l'attaque Méga-Sangsue. Néanmoins, sa récupération de PV et sa puissance de frappe ne sont pas assez importante avec Méga-Sangsue et ce Pokémon n'est pas utile dans une équipe possédant un Pokémon dôté d'une attaque de sommeil. 
+Noadkoko possède justement Poudre Dodo ce qui lui permettait de temporiser tout en récupérant des PV avec l'attaque Méga-Sangsue. Néanmoins, sa récupération de PV et sa puissance de frappe ne sont pas assez importante avec Méga-Sangsue et ce Pokémon n'est pas utile dans une équipe possédant un Pokémon dôté d'une attaque de sommeil.
 Il est également joué avec Psyko, simplement une excellente attaque sur laquelle aucun Pokémon ne peut rentrer.
 Explosion possède 170 de puissance de base et a tout comme Destruction le malheur de diviser la Défense de l'adversaire par 2 le tour où cette attaque est lancée. En revanche, elle cause l'évanouissement de Noadkoko. Cette attaque surpuissante ne peut être mise de côté.
-Le 4ème attaque peut être Damoclès ou Ultralaser car elle permettent de faire de gros dégâts à Alakazam, Leveinard et Lippoutou, de Pokémon possédant une faible Défense et ayant donc tendance à venir sur Noadkoko pour tanker sa redoutable attaque Psyko. Attention néanmoins à Ultralaser qui peut avoir de conséquences catastrophiques si l'adversaire réussit à prédire cette attaque: le temps de rechargement vous immobilisera un tour. 
-Méga-Sangsue peut être joué mais pêche par sa puissance de 40. 
+Le 4ème attaque peut être Damoclès ou Ultralaser car elle permettent de faire de gros dégâts à Alakazam, Leveinard et Lippoutou, de Pokémon possédant une faible Défense et ayant donc tendance à venir sur Noadkoko pour tanker sa redoutable attaque Psyko. Attention néanmoins à Ultralaser qui peut avoir de conséquences catastrophiques si l'adversaire réussit à prédire cette attaque: le temps de rechargement vous immobilisera un tour.
+Méga-Sangsue peut être joué mais pêche par sa puissance de 40.
 Para-Spore est également viable car elle permet d'infliger une paralysie lorsque l'un des Pokémon de l'équipe de votre adversaire est endormi de Poudre Dodo (règle uniquement valable sur Smogon, cela ne s'applique donc pas sur cartouche).
 
 Poudre Dodo
