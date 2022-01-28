@@ -8,14 +8,14 @@
         <button type="button"
                 class="btn btn-primary stretched-link pokemon-font"
                 data-bs-toggle="modal"
-                [attr.data-bs-target]="'#' + name"
+                [attr.data-bs-target]="'#titre_' + name"
                 style="font-size: 8px;"
                 >Description détaillée</button>
     </div>
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="{{name}}" tabindex="-1" role="dialog" [attr.aria-labelledby]="'Modal de ' + name" aria-hidden="true">
+<div class="modal fade" [attr.id]="'titre_' + name" tabindex="-1" role="dialog" [attr.aria-labelledby]="'Modal de ' + name" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -25,10 +25,10 @@
         <div class="modal-body" style="text-align: center">
           <div class="modal-div-image">
             <img src="{{sprite}}" class="card-img-top img-modal" alt="{{name}}">
-            <img src="assets/images/pokeball.png" class="pokeball pokeball-top-left"/>
-            <img src="assets/images/pokeball.png" class="pokeball pokeball-top-right"/>
-            <img src="assets/images/pokeball.png" class="pokeball pokeball-bottom-left"/>
-            <img src="assets/images/pokeball.png" class="pokeball pokeball-bottom-right"/>
+            <img src="assets/images/pokeball.png" class="pokeball pokeball-top-left" alt="Pokéball top left"/>
+            <img src="assets/images/pokeball.png" class="pokeball pokeball-top-right" alt="Pokéball top right"/>
+            <img src="assets/images/pokeball.png" class="pokeball pokeball-bottom-left" alt="Pokéball bottom left"/>
+            <img src="assets/images/pokeball.png" class="pokeball pokeball-bottom-right" alt="Pokéball bottom right"/>
           </div>
           <div class="pokemon-font" style="font-size: 10px;">
             <br>
