@@ -12,11 +12,12 @@ export class PokemonPageComponent implements OnInit {
 
   constructor(private getDataService: GetDataService, private router: Router) {}
 
-  // AJOUTER UN OUTPUT DU POKEMON ARRAY QUI VA L'ENVOYER VERS APP COMPONENT QUI LUI MÊME LE RENVOIE ICI
   @Input()
   pokemonArray: Pokemon[] = this.getDataService.pokemonArray;
 
   ngOnInit(): void {
+
+    // Ligne pouvant être décommentée pour envoyer les données du pokemonArray dans get-data.service.ts vers la Firebase
     //this.getDataService.storeData();
 
     // Récupère le tableau de Pokémon reçu par requête HTTP dans le service get-data.service.ts

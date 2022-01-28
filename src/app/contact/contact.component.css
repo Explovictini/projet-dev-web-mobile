@@ -3,6 +3,12 @@
   src: local("pokemonFont"), url(../../../src/assets/fonts/pokemonFont.ttf);
 }
 
+.pokemon-font {
+  font-family: pokemonFont;
+}
+
+/* Styles sur les cards de contact */
+
 .card:hover{
   box-shadow: 3px 3px 3px black;
   transform:scale(1.03);
@@ -24,18 +30,8 @@
   padding: 5px;
 }
 
-.img-modal {
-  width: 300px;
-  height: 300px;
-  border-bottom: 0px white;
-  vertical-align: bottom;
-}
-
 .type-img {
   width: 68px;
   height: 15px;
 }
 
-.pokemon-font {
-  font-family: pokemonFont;
-}

@@ -10,19 +10,9 @@ export class StratPokemonComponent implements OnInit {
 
   @Input() dexNumber!: string;
   @Input() name!: string;
-  @Input() name_english!: string;
-  @Input() name_deutsch!: string;
-  @Input() name_japan!: string;
   @Input() nb_type!: number;
   @Input() type1!: string;
   @Input() type2!: string;
-  @Input() height!: number;
-  @Input() weight!: number;
-  @Input() hp!: number;
-  @Input() force!: number;
-  @Input() defense!: number;
-  @Input() special!: number;
-  @Input() speed!: number;
   @Input() weaknesses_resistances!: string[];
   @Input() description!: string;
 
@@ -35,7 +25,7 @@ export class StratPokemonComponent implements OnInit {
   strong_resistances: string[] = [];
   immunities: string[] = [];
 
-
+  // Map de description stratégique de certains Pokémons
   pokExplanation  = new Map<string, string>([
     ["Tauros", "Tauros est assurément le meilleur Pokémon de sa génération en terme de stratégie (excepté Mew et Mewtwo). Avec près de 70% des équipes possédant un Tauros, celui-ci se distingue par sa puissance de frappe inégalable, avec une attaque Ultralaser stabée surpuissante et physique, contrairement à aujourd'hui où il s'agit d'une attaque spéciale.\n" +
     "Le tour de rechargement après l'utilisation de cette attaque n'étant pas toujours envisageable, on la couple donc avec Plaquage pour des dégâts toujours robustes.\n" +
@@ -68,6 +58,7 @@ export class StratPokemonComponent implements OnInit {
     "Reflet était également utile, car elle permettait de combler le manque de Défense d'Alakazam mais ne l'est plus aujourd'hui puisque sa Défense Spéciale est devenue mauvaise. Frappe Atlas peut être envisagé pour contrer les Pokémon contrant Psyko tels que les Pokémon Psy (Noadkoko, Alakazam ou Flagadoss pour les plus courants) eux-mêmes ou Leveinard.\n"],
   ]);
 
+  // Set stratégique de certains Pokémons
   pokAttacks = new Map<string, string[]>([
     ["Tauros", ["Plaquage", "Ultralaser", "Blizzard", "Séisme/Déflagration"]],
     ["Leveinard", ["Reflet", "Frappe Atlas/Laser Glace", "E-Coque", "Cage Eclair"]],
@@ -80,7 +71,10 @@ export class StratPokemonComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+
     this.actualiserSprite();
+
+    // Préparer le tableau de faiblesses/résistances
     let i: number = 0;
     for(let ele of this.weaknesses_resistances){
       switch (ele) {
@@ -108,7 +102,9 @@ export class StratPokemonComponent implements OnInit {
       }
       i += 1;
     }
+
   }
+
 
   actualiserSprite(): void {
     this.sprite="/assets/sprites/Sprite_"+ this.dexNumber + "_J.png";

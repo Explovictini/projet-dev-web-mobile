@@ -7,6 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PokemonItemComponent implements OnInit {
 
+  // Données utilisées lors de l'affichage des Pokémons
+  
+  // searchword sera utilisée dans la partie "Stratégie"
   @Input() searchword!: string;
   @Input() dexNumber!: string;
   @Input() name!: string;

@@ -9,13 +9,15 @@ import {Pokemon} from "../pokemon.model";
   styleUrls: ['./strat-page.component.css']
 })
 export class StratPageComponent implements OnInit {
+
+  // searchWord: utilisé pour la barre de recherche dans la partie "Stratégie"
   searchword: string = "";
   @Input()
   pokemonArray: Pokemon[] = this.getDataService.pokemonArray;
   pokemonArrayCopy = this.pokemonArray.slice();
+
   constructor(private getDataService: GetDataService) {}
 
-  // AJOUTER UN OUTPUT DU POKEMON ARRAY QUI VA L'ENVOYER VERS APP COMPONENT QUI LUI MÊME LE RENVOIE ICI
 
   ngOnInit(): void {
     // Récupère le tableau de Pokémon reçu par requête HTTP dans le service get-data.service.ts

@@ -3,6 +3,12 @@
   src: local("pokemonFont"), url(../../../../src/assets/fonts/pokemonFont.ttf); 
 }
 
+
+/* Styles s'appliquant pour les écrans de taille xs ou plus. Certains styles seront écrasées par d'autres lorsque l'écran grandit */
+
+
+/* Styles pour les cards */
+
 .card:hover{
     box-shadow: 3px 3px 3px black;
     transform:scale(1.03);
@@ -24,6 +30,8 @@
     padding: 5px;
 }
 
+/* Styles pour les modals */
+
 .img-modal {
   width: 300px;
   height: 300px;
@@ -41,7 +49,6 @@
   vertical-align: middle;
 }
 
-
 .modal-div-image {
   border: 8px black double;
   position: relative;
@@ -50,6 +57,8 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Styles pour les Pokéballs */
 
 .pokeball{
   position: absolute;
@@ -79,17 +88,19 @@
   font-family: pokemonFont;
 }
 
-/* .separator{
-  border-right: 2px solid black;
-} */
 
+/* Style pour les écrans small et plus */
 
-  @media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) {
+
+  /* Classe utilisée pour faire un séparateur entre le poids/taille d'un Pokémon et ses noms dans différentes langues */
+
   .separator{
     border-right: 2px solid black;
   }
 }
 
+/* Style pour les écrans extra-small */
 
 @media screen and (max-width: 576px) {
   .img-modal {
@@ -136,6 +147,8 @@
     font-size: 15px;
   }
 }
+
+/* Style pour les écrans small */
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .img-modal {

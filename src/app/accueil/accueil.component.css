@@ -1,3 +1,21 @@
+/* Styles généraux */
+
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/* Styles lorsque l'écran est medium ou plus grand */
+
+
+/* Styles carousel */
+
 .carousel {
     width:300px;
     height:300px;
@@ -12,6 +30,9 @@
 #carousel {
     position: relative;
 }
+
+
+/* Styles des Pokéballs */
 
 .pokeball{
     position: absolute;
@@ -36,6 +57,9 @@
     bottom:-16px;
     right:-16px;
 }
+
+
+/* Styles lorsque l'écran est extra-small */
 
 
 @media screen and (max-width: 576px) {
@@ -77,6 +101,10 @@
     }
 }
 
+
+/* Styles lorsque l'écran est small */
+
+
 @media screen and (min-width: 576px) and (max-width: 768px) {
 
     .carousel {
@@ -115,12 +143,4 @@
         right:-15px;
     }
 
-}
-
-p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-li{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
