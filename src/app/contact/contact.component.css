@@ -1,0 +1,184 @@
+@font-face{
+  font-family: 'pokemonFont';
+  src: local("pokemonFont"), url(../../../src/assets/fonts/pokemonFont.ttf);
+}
+
+.card:hover{
+  box-shadow: 3px 3px 3px black;
+  transform:scale(1.03);
+}
+
+.card{
+  transition:0.3s;
+  border: 3px solid #a6a296;
+  padding: 4px;
+  width: 200px;
+}
+
+.card-text{
+  font-size: 11px;
+}
+
+.card-img-top {
+  border-bottom: 2px solid #a6a296;
+  padding: 5px;
+}
+
+.img-modal {
+  width: 300px;
+  height: 300px;
+  border-bottom: 0px white;
+  vertical-align: bottom;
+}
+
+.type-img {
+  width: 68px;
+  height: 15px;
+}
+
+.flag {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.modal-div-image {
+  border: 8px black double;
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pokeball{
+  position: absolute;
+}
+
+.pokeball-top-left {
+  top:-16px;
+  left:-16px;
+}
+
+.pokeball-top-right {
+  top: -16px;
+  right:-16px;
+}
+
+.pokeball-bottom-left {
+  bottom:-16px;
+  left:-16px;
+}
+
+.pokeball-bottom-right {
+  bottom:-16px;
+  right:-16px;
+}
+
+.pokemon-font {
+  font-family: pokemonFont;
+}
+
+/* .separator{
+  border-right: 2px solid black;
+} */
+
+
+@media screen and (min-width: 576px) {
+  .separator{
+    border-right: 2px solid black;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .img-modal {
+    width: 250px;
+    height: 250px;
+  }
+
+  .modal-div-image {
+    border: 6px black double;
+    position: relative;
+    width: 260px;
+    height: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pokeball{
+    position: absolute;
+    width: 19px;
+    height: 19px;
+  }
+
+  .pokeball-top-left {
+    top:-14px;
+    left:-14px;
+  }
+
+  .pokeball-top-right {
+    top: -14px;
+    right:-14px;
+  }
+
+  .pokeball-bottom-left {
+    bottom:-14px;
+    left:-14px;
+  }
+
+  .pokeball-bottom-right {
+    bottom:-14px;
+    right:-14px;
+  }
+
+  .modal-title{
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .img-modal {
+    width: 275px;
+    height: 275px;
+  }
+
+  .modal-div-image {
+    border: 7px black double;
+    position: relative;
+    width: 290px;
+    height: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pokeball{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+  }
+
+  .pokeball-top-left {
+    top:-15px;
+    left:-15px;
+  }
+
+  .pokeball-top-right {
+    top: -15px;
+    right:-15px;
+  }
+
+  .pokeball-bottom-left {
+    bottom:-15px;
+    left:-15px;
+  }
+
+  .pokeball-bottom-right {
+    bottom:-15px;
+    right:-15px;
+  }
+
+  .modal-title{
+    font-size: 18px;
+  }
+}
