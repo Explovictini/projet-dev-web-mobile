@@ -1,4 +1,14 @@
-<input type="text" [(ngModel)]="searchword" (input)="searchThis()" style="margin-top: 1em;" class="w-25">{{searchThis()}}
+<div class="form-outline">
+  <input type="text"
+  [(ngModel)]="searchword"
+  id="recherche"
+  (input)="searchThis()"
+  style="margin-top: 1em;"
+  class="form-control"
+  placeholder="Rechercher un Pokémon">
+  {{searchThis()}}
+</div>
+
 <div class="container" ng-init="searchThis()">
   <div class="row">
     <app-strat-pokemon

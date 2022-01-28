@@ -1,0 +1,15 @@
+.form-control{
+    width: 30%;
+}
+
+@media screen and (max-width: 576px) {
+    .form-control{
+        width: 75%;;
+    }
+
+    .form-outline{
+        display: flex;
+        align-items: right;
+        justify-content: center;
+    }
+  }

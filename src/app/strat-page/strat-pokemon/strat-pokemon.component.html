@@ -2,47 +2,47 @@
   <div class="row">
     <div class="col">
       <img src="{{sprite}}" alt="{{name}}">
-      <p>{{name}}</p>
-      <img src="assets/sprite_type/{{type1}}.png" alt="{{type1}}">
+      <p class="pokemon-font">{{name}}</p>
+      <img src="assets/sprite_type/{{type1}}.png" alt="{{type1}}" style="padding-right: 5px;">
       <img *ngIf="type2 != 'Aucun'" src="assets/sprite_type/{{type2}}.png" alt="{{type2}}">
     </div>
 
     <div class="col">
       <div *ngIf="strong_weaknesses.length > 0">
-        <p *ngIf="strong_weaknesses.length == 1" >faiblesse forte: </p>
-        <p *ngIf="strong_weaknesses.length > 1" >faiblesses fortes: </p>
+        <p *ngIf="strong_weaknesses.length == 1" >Faiblesse forte: </p>
+        <p *ngIf="strong_weaknesses.length > 1" >Faiblesses fortes: </p>
         <div *ngFor="let str_weak of strong_weaknesses" style="display: inline">
-          <img src="assets/sprite_type/{{str_weak}}.png" alt="{{str_weak}}">
+          <img src="assets/sprite_type/{{str_weak}}.png" alt="{{str_weak}}" style="padding-right: 5px;">
         </div>
       </div>
 
       <div *ngIf="weaknesses.length > 0">
-        <p *ngIf="weaknesses.length == 1">faiblesse: </p>
-        <p *ngIf="weaknesses.length > 1">faiblesses: </p>
+        <p *ngIf="weaknesses.length == 1">Faiblesse: </p>
+        <p *ngIf="weaknesses.length > 1">Faiblesses: </p>
         <div *ngFor="let weak of weaknesses" style="display: inline">
-          <img src="assets/sprite_type/{{weak}}.png"  alt="{{weak}}" >
+          <img src="assets/sprite_type/{{weak}}.png" alt="{{weak}}" style="padding-right: 5px;">
         </div>
       </div>
 
-      <p *ngIf="resistances.length == 1">résistance: </p>
-      <p *ngIf="resistances.length > 1">résistances: </p>
+      <p *ngIf="resistances.length == 1">Résistance: </p>
+      <p *ngIf="resistances.length > 1">Résistances: </p>
       <div *ngFor="let res of resistances" style="display: inline">
-        <img src="assets/sprite_type/{{res}}.png" alt="{{res}}">
+        <img src="assets/sprite_type/{{res}}.png" alt="{{res}}" style="padding-right: 5px;">
       </div>
 
       <div *ngIf="strong_resistances.length > 0">
-        <p *ngIf="strong_resistances.length == 1">résistance forte: </p>
-        <p *ngIf="strong_resistances.length > 1">résistances fortes: </p>
+        <p *ngIf="strong_resistances.length == 1">Résistance forte: </p>
+        <p *ngIf="strong_resistances.length > 1">Résistances fortes: </p>
         <div *ngFor="let str_res of strong_resistances" style="display: inline">
-          <img src="assets/sprite_type/{{str_res}}.png"  alt="{{str_res}}">
+          <img src="assets/sprite_type/{{str_res}}.png" alt="{{str_res}}" style="padding-right: 5px;">
         </div>
       </div>
 
       <div *ngIf="immunities.length > 0">
-        <p *ngIf="immunities.length == 1">immunité: </p>
-        <p *ngIf="immunities.length > 1">immunités: </p>
+        <p *ngIf="immunities.length == 1">Immunité: </p>
+        <p *ngIf="immunities.length > 1">Immunités: </p>
         <div *ngFor="let imm of immunities" style="display: inline">
-          <img src="assets/sprite_type/{{imm}}.png" alt="{{imm}}">
+          <img src="assets/sprite_type/{{imm}}.png" alt="{{imm}}" style="padding-right: 5px;">
         </div>
       </div>
     </div>
